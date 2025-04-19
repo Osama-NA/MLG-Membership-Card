@@ -54,11 +54,13 @@ button{
   letter-spacing: 1.5px;
   outline:none;
   border-radius: 0;
+  color: #fff;
   background-color: #000;
   padding: 1.25rem 1rem;
   text-transform: uppercase;
 }
 button:hover{
+  color: #fff;
   background-color: #000;
 }
 
@@ -69,7 +71,6 @@ button:hover{
 
 .error{
   position: absolute;
-  bottom: -1.75rem;
   color: rgb(247, 69, 69);
   font-size: 12px;
 }
@@ -97,7 +98,6 @@ button:hover{
   }
   
   .error{
-    top: 105%;
     font-size: 8px;
     line-height: 12px;
   }
@@ -121,8 +121,5 @@ button:hover{
 @media (max-width: 359px) {
   input{
     font-size: 7px;
-  }
-  .error{
-    top: 103%;
   }
 }

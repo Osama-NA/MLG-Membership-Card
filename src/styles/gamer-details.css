@@ -34,6 +34,10 @@
   height: 58px;
 }
 
+.gamer-details .error{
+  bottom: -1.75rem;
+}
+
 @media (max-width: 839px) {
   /* GAMER DETAILS */
   .gamer-details h2{
@@ -75,6 +79,10 @@
     margin-left: .35rem;
     height: auto;
   }
+  
+  .gamer-details .error{
+    top: 105%;
+  }
 }
 
 @media (max-width: 520px) {
@@ -95,5 +103,9 @@
   .gamer-details p{
     font-size: 8px;
     line-height: 18px;
+  }
+
+  .gamer-details .error{
+    top: 103%;
   }
 }

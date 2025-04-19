@@ -12,9 +12,17 @@ function SelectCard() {
 
   const { gamerDetails } = useContext(GamerDetailsContext);
 
+  const [error, setError] = useState("");
   const [selectedTemplate, setTemplate] = useState("");
 
   const download = () => {
+    if(!selectedTemplate){
+      setError("Naked cards? That’s illegal. Pick a style!")
+      return
+    }
+
+    setError("")
+    
     card.current.style.opacity = 1
     html2canvas(card.current).then((canvas) => {
       const link = document.createElement("a");
@@ -54,6 +62,7 @@ function SelectCard() {
             setTemplate={setTemplate}
             selectedTemplate={selectedTemplate}
           />
+          <span className='error'>{error}</span>
         </div>
 
         <button className="large-btn" onClick={download}>

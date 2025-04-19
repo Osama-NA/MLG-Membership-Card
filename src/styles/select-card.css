@@ -13,6 +13,7 @@
 }
 
 .select-card .cards{
+  position: relative;
   margin: 2rem 0 3.5rem;
   justify-content: space-between;
 }
@@ -55,6 +56,10 @@
   color: #fff;
 }
 
+.select-card .error{
+  bottom: -2.1rem;
+}
+
 @media (max-width: 839px) {
   /* SELECT CARD */
   .select-card .title{
@@ -88,6 +93,10 @@
   .select-card .cards .card .card-template img.selected{
     border:  8px solid #fefefe;
   }
+  
+  .select-card .error{
+    bottom: -1.6rem;
+  }
 }
 
 @media (max-width: 520px) {
@@ -116,6 +125,12 @@
   .select-card .cards .card .card-template{
     width: 330px;
     height: 330px;
+  }
+
+  .select-card .error{
+    bottom: -2rem;
+    text-align: center;
+    max-width: 30ch;
   }
 }
 
