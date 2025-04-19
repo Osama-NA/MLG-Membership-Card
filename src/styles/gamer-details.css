@@ -1,0 +1,99 @@
+
+/* GAMER DETAILS */
+.gamer-details h2{
+  font-size: 18px;
+  letter-spacing: 1.5px;
+}
+
+.gamer-details p{
+  font-size: 14px;
+  line-height: 26px;
+  color: rgb(129, 129, 129);
+  margin-top: 1.75rem;
+  max-width: 40ch;
+}
+
+.gamer-details .input-group{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 2.35rem 0 3rem;
+}
+.gamer-details .input-group .input{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.gamer-details .input-group .input label{
+  font-size: 14px;
+}
+.gamer-details .input-group .input .input-field button{
+  font-size: 10px;
+  margin-left: .5rem;
+  height: 58px;
+}
+
+@media (max-width: 839px) {
+  /* GAMER DETAILS */
+  .gamer-details h2{
+    font-size: 14px;
+    line-height: 28px;
+    max-width: 20ch;
+    letter-spacing: 1px;
+    margin-bottom: .85rem;
+  }
+  
+  .gamer-details p{
+    font-size: 9px;
+    line-height: 21px;
+    margin-top: 0;
+    max-width: 42ch;
+  }
+  
+  .gamer-details .input-group{
+    gap: 1.6rem;
+    margin: 1.75rem 0 2.5rem;
+  }
+  .gamer-details .input-group .input{
+    gap: .6rem;
+  }
+  .gamer-details .input-group .input label{
+    font-size: 9px;
+  }
+  .gamer-details .input-group .input .input-field{
+    position: relative;
+  }
+  .gamer-details .input-group .input .input-field button{
+    position: absolute;
+    top: -1.05rem;
+    padding: 0;
+    right: 0;
+    color: #000000;
+    background-color: transparent;
+    font-size: 7px;
+    margin-left: .35rem;
+    height: auto;
+  }
+}
+
+@media (max-width: 520px) {
+  /* GAMER DETAILS */
+  .gamer-details h2, .gamer-details p{
+    width: 100%;
+    text-align: center;
+  }
+  .gamer-details h2{
+    margin: .75rem auto .5rem;
+  }
+  .gamer-details p{
+    margin: 0 auto .6rem;
+  }
+}
+
+@media (max-width: 359px) {
+  .gamer-details p{
+    font-size: 8px;
+    line-height: 18px;
+  }
+}
